@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | By Code Info</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" placeholder="" />
+        <input type="button" value="Submit" />
+      <closeform></closeform></form>
+    </div>
+    <p class="para-2">
+      Not have an account? <a href="signup.html">Sign Up Here</a>
+    </p>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB1YbpoGqezx9fPa9g-UOQmRCzJwcVIAEU",
+      authDomain: "loginandsignup-f6fda.firebaseapp.com",
+      databaseURL: "https://loginandsignup-f6fda-default-rtdb.firebaseio.com",
+      projectId: "loginandsignup-f6fda",
+      storageBucket: "loginandsignup-f6fda.appspot.com",
+      messagingSenderId: "913709358622",
+      appId: "1:913709358622:web:2aac643aa39a858280d80f",
+      measurementId: "G-T5XKKBL2C9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
+

@@ -1,0 +1,29 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false
+  },
+  "database": {
+    "rules": {
+      ".read": false,
+      ".write": false
+    }
+  },
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
